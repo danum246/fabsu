@@ -109,7 +109,7 @@
 				->get('db_trxtype')
 				->result();
 				
-		 $this->parameters['sprojecst'] = $this->db->select('id_project,nm_subproject')
+		 $this->parameters['sproject'] = $this->db->select('id_project,nm_subproject')
 				->order_by('id','ASC')
 				->get('db_subproject')
 				->result();

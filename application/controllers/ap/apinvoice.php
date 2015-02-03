@@ -86,7 +86,7 @@
 				->get('db_trxtype')
 				->result();
 				
-		 $this->parameters['sproject'] = $this->db->query("select * from db_subproject where id_pt='".$this->pt."' order by nm_subproject")->result();
+		 $this->parameters['sproject'] = $this->db->query("select * from db_subproject where id_pt='".$this->pt."' and pt_id <> 12 order by nm_subproject")->result();
 				//->result();
 		
 		/* for custermer choise */		
